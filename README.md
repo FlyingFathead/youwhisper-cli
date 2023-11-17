@@ -1,5 +1,7 @@
 # youwhisper
-`youwhisper` is a versatile transcription script/mini-tool that combines the functionality of `yt-dlp` and `whisperx` into a singular transcription pipeline. It allows for efficient downloading and transcribing of audio from various video streaming platforms, making it an invaluable resource for creating accurate subtitles and text transcripts with a single, simple command.
+`youwhisper` is a versatile, Python-based video/audio transcription mini-tool that uses `yt-dlp` and `whisperx` (or `openai-whisper`, depending on the configuration) to create a single-command transcription pipeline. 
+
+It allows for efficient downloading and transcribing of audio from various video hosting platforms (such as YouTube, see the full list [here](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md#:~:text=URL%3A%20https%3A%2F%2Fgithub.com%2Fyt)) via `yt-dlp` and auto-transcribes the audio with either `whisperx` or `openai-whisper`, making it a handy all-in-one CLI tool for creating accurate subtitles and text transcripts with a single, simple command.
 
 ## Features
 
