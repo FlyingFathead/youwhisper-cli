@@ -71,25 +71,25 @@ output_formats = srt, txt
 ```
 Configuring youwhisper.ini: A Step-by-Step Guide
 
-1. executable:
+1. `executable`:
 
     - This specifies the transcription tool to be used.
     - In this example, `whisperx` is set as the executable, meaning `youwhisper` will use WhisperX for transcription.
     - If you have `openai-whisper` installed instead you can replace `whisperx` with `whisper` or the path to the `openai-whisper` executable.
 
-2. model:
+2. `model`:
 
     - This determines the specific model of WhisperX or openai-whisper to be used for transcription.
     - `large-v2` is chosen here for its balance of accuracy and performance.
     - You can select different models depending on your accuracy requirements and resource availability (e.g., `base`, `small`, `medium`, `large`, or preferably `large-v2` with WhisperX. At the time of writing this, `openai-whisper` has `large-v3` available).
 
-3. language:
+3. `language`:
 
     - This sets the language for transcription.
     - The example uses `en` for English.
     - You can change this to any supported language code as per your requirement (e.g., `fi` for Finnish, `es` for Spanish, `de` for German, etc).
 
-4. output_formats:
+4. `output_formats`:
 
     - This defines the formats in which the transcribed output will be saved.
     - `srt` and `txt` are chosen, which means youwhisper will generate both subtitle files (.srt) and plain text files (.txt).
