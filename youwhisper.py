@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# youwhisper // v.1.01 // Nov 17 2023
+# youwhisper // v.1.02 // Nov 17 2023
 # by FlyingFathead (https://github.com/FlyingFathead)
 # addtional ghostwriting by ChaosWhisperer
 
@@ -88,7 +88,7 @@ def transcribe_audio(audio_file, config):
 
 def main():
     # check for cli arguments
-    if len(sys.argv) < 2:
+    if len(sys.argv) < 2 or not sys.argv[1].strip():
         print("Usage: youwhisper <Video-URL>")
         sys.exit(1)
     
