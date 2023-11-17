@@ -1,5 +1,5 @@
 # youwhisper
-`youwhisper` is a versatile transcription tool that combines the functionality of `yt-dlp` and `whisperx`. It allows for efficient downloading and transcribing of audio from various video streaming platforms, making it an invaluable resource for creating accurate subtitles and text transcripts.
+`youwhisper` is a versatile transcription script/mini-tool that combines the functionality of `yt-dlp` and `whisperx`. It allows for efficient downloading and transcribing of audio from various video streaming platforms, making it an invaluable resource for creating accurate subtitles and text transcripts with a single, simple command.
 
 ## Features
 
@@ -69,4 +69,11 @@ Contributions to enhance youwhisper are always welcome! Feel free to report issu
 
 ## License
 
-`youwhisper` is made available under the MIT License, all the other required dependencies have their own corresponding licenses.
+`youwhisper` is made available under the MIT License. See the [LICENSE](LICENSE) file for more details.
+All the other required dependencies have their own corresponding licenses. See their licenses from their corresponding repositories.
+
+## External links
+
+- `whisperX` - https://github.com/m-bain/whisperX
+- `openai-whisper` - https://github.com/openai/whisper
+- `yt-dlp` - https://github.com/yt-dlp/yt-dlp
