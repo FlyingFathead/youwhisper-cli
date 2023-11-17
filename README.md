@@ -77,7 +77,7 @@ Configuring youwhisper.ini: A Step-by-Step Guide
 
     - This determines the specific model of WhisperX or openai-whisper to be used for transcription.
     - `large-v2` is chosen here for its balance of accuracy and performance.
-    - You can select different models depending on your accuracy requirements and resource availability (e.g., `base`, `small`, `medium`, `large`).
+    - You can select different models depending on your accuracy requirements and resource availability (e.g., `base`, `small`, `medium`, `large`, or preferably `large-v2` with WhisperX. At the time of writing this, `openai-whisper` has `large-v3` available).
 
 3. language:
 
