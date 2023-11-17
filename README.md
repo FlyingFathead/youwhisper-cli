@@ -5,6 +5,12 @@ It allows for efficient downloading and transcribing of audio from various video
 
 This makes `youwhisper` a handy all-in-one CLI tool for creating accurate subtitles and text transcripts with a single, simple command.
 
+```bash
+youwhisper <Video-URL>
+```
+
+`youwhisper` runs in both Linux environments as well as in Windows using Git Bash.
+
 ## Features
 
 - **Versatile Streaming Platform Support:** Utilizes `yt-dlp` for downloading a local audio copy from a wide range of video streaming platforms, not just YouTube.
