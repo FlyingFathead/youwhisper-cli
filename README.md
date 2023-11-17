@@ -1,5 +1,5 @@
 # youwhisper
-`youwhisper` is a versatile transcription script/mini-tool that combines the functionality of `yt-dlp` and `whisperx`. It allows for efficient downloading and transcribing of audio from various video streaming platforms, making it an invaluable resource for creating accurate subtitles and text transcripts with a single, simple command.
+`youwhisper` is a versatile transcription script/mini-tool that combines the functionality of `yt-dlp` and `whisperx` into a singular transcription pipeline. It allows for efficient downloading and transcribing of audio from various video streaming platforms, making it an invaluable resource for creating accurate subtitles and text transcripts with a single, simple command.
 
 ## Features
 
@@ -56,7 +56,42 @@ youwhisper <Video-URL>
 
 ## Configuration
 
-Adjust settings like transcription model, language, and output formats in the youwhisper.ini file to tailor the tool to your needs.
+Adjust settings like transcription model, language, and output formats in the youwhisper.ini file to tailor the tool to your needs. Here's an example configuration of the `youwhisper.ini`:
+
+```
+[whisper]
+executable = whisperx
+model = large-v2
+language = en
+output_formats = srt, txt
+```
+Configuring youwhisper.ini: A Step-by-Step Guide
+
+1. executable:
+
+    - This specifies the transcription tool to be used.
+    - In this example, `whisperx` is set as the executable, meaning `youwhisper` will use WhisperX for transcription.
+    - If you have `openai-whisper` installed instead you can replace `whisperx` with `whisper` or the path to the `openai-whisper` executable.
+
+2. model:
+
+    - This determines the specific model of WhisperX or openai-whisper to be used for transcription.
+    - `large-v2` is chosen here for its balance of accuracy and performance.
+    - You can select different models depending on your accuracy requirements and resource availability (e.g., `base`, `small`, `medium`, `large`).
+
+3. language:
+
+    - This sets the language for transcription.
+    - The example uses `en` for English.
+    - You can change this to any supported language code as per your requirement (e.g., `fi` for Finnish, `es` for Spanish, `de` for German, etc).
+
+4. output_formats:
+
+    - This defines the formats in which the transcribed output will be saved.
+    - `srt` and `txt` are chosen, which means youwhisper will generate both subtitle files (.srt) and plain text files (.txt).
+    - You can specify different or additional formats supported by WhisperX or openai-whisper, separating them with commas (e.g., `srt`, `txt`, `json`).
+
+By customizing these settings, you can make youwhisper fit perfectly into your workflow, whether you're a content creator, researcher, or anyone in need of quick and accurate transcriptions out of online videos.
 
 ## Dependencies
 
