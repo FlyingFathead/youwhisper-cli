@@ -105,8 +105,8 @@ By customizing these settings, you can make youwhisper fit perfectly into your w
 
 ## Dependencies
 
-- `yt-dlp`: For audio extraction from various video streaming platforms.
-- `whisperx` (or alternatively, `openai-whisper`): For converting audio into textual and subtitle formats.
+- `yt-dlp` -- For audio extraction from various video streaming platforms.
+- `whisperx` (or alternatively, `openai-whisper`) -- For converting audio into textual and subtitle formats.
 
 ## Contributing
 
