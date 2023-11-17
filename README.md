@@ -105,8 +105,8 @@ Adjust settings like transcription model, language, and output formats in the yo
 
 ```
 [whisper]
-executable = whisperx
-model = large-v2
+executable = whisper
+model = large-v3
 language = en
 output_formats = all
 ```
