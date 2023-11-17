@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# youwhisper // v.1.0 // Nov 17 2023
+# youwhisper // v.1.01 // Nov 17 2023
 # by FlyingFathead (https://github.com/FlyingFathead)
 # addtional ghostwriting by ChaosWhisperer
 
@@ -87,10 +87,15 @@ def transcribe_audio(audio_file, config):
     return exit_code == 0, output_files
 
 def main():
-    # [Existing main function code]
+    # check for cli arguments
+    if len(sys.argv) < 2:
+        print("Usage: youwhisper <Video-URL>")
+        sys.exit(1)
+    
+    # load configs and args
     config = load_config()
-
     youtube_url = sys.argv[1]
+
     print_horizontal_line()
     print(f"Downloading audio from URL: {youtube_url} ...")
     print_horizontal_line()
