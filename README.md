@@ -150,6 +150,7 @@ By customizing these settings, you can make youwhisper fit perfectly into your w
 - Feel free to star the repo, share feedback, or participate in discussions if this project seems to be of any interest!
 
 ## Changelog
+- `v1.06` - display set language
 - `v1.05` - bug fixes, additional checks
 - `v1.04` - added safety checks to see that `yt-dlp` and/or `whisper` or `whisperx` is installed before running, also added helpers to guide through the install process, should something be missing.
 - `v1.00` (Nov 17, 2023)
