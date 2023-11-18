@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# youwhisper // v.1.05 // Nov 17 2023
+# youwhisper // v.1.06 // Nov 18 2023
 # by FlyingFathead (https://github.com/FlyingFathead)
 # addtional ghostwriting by ChaosWhisperer
 
@@ -50,7 +50,12 @@ def load_config():
 
     if 'whisper' not in config:
         raise ValueError(f"'whisper' section not found in {config_file}.")
-    
+
+    # Print the default language from the config file
+    print_horizontal_line()
+    print(f"::: Default language set in 'youwhisper.ini' configuration file: {config['whisper']['language']}")
+    return config['whisper']
+
     return config['whisper']
 
 def run_command(command):
@@ -168,7 +173,9 @@ def main():
     if args.language:
         config['language'] = args.language
 
-    print_horizontal_line()
+    # Print the language that will be used for transcription
+    # print_horizontal_line()
+    print(f"::: Language for transcription: {config['language']}")
     print(f"::: Downloading audio from URL: {video_url} ...")
     print_horizontal_line()
     audio_file = download_audio(video_url)
