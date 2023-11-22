@@ -135,7 +135,7 @@ Configuring youwhisper.ini: A Step-by-Step Guide
 
     - This defines the formats in which the transcribed output will be saved.
     - The default is to output to all available formats
-    - You can specify different or additional formats supported by WhisperX or openai-whisper, separating them with commas (e.g., `srt`, `txt`, `json`).
+    - You can specify different or additional formats supported by WhisperX or openai-whisper (e.g., `srt`, `txt`, `json`) -- note however that if `all` is not chosen, you can only choose _one_ format.
 
 By customizing these settings, you can make youwhisper fit perfectly into your workflow, whether you're a content creator, researcher, or anyone in need of quick and accurate transcriptions out of online videos.
 
