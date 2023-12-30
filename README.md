@@ -30,7 +30,7 @@ For transcriptions where the spoken language is Finnish (`fi`). Program defaults
 
 1. To get started with `youwhisper-cli`, clone the repository and set up the environment.
 ```bash
-git clone https://github.com/FlyingFathead/youwhisperc-li.git
+git clone https://github.com/FlyingFathead/youwhisper-cli.git
 cd youwhisper-cli
 ```
 
