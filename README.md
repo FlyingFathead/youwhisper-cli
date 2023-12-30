@@ -150,6 +150,8 @@ By customizing these settings, you can make youwhisper fit perfectly into your w
 - Feel free to star the repo, share feedback, or participate in discussions if this project seems to be of any interest!
 
 ## Changelog
+_(Note: on Dec 30, 2023: changed the project+repo name to `youwhisper-cli` from `youwhisper` to avoid a repo name collision with an unrelated project)_
+
 - `v1.06` - display set language
 - `v1.05` - bug fixes, additional checks
 - `v1.04` - added safety checks to see that `yt-dlp` and/or `whisper` or `whisperx` is installed before running, also added helpers to guide through the install process, should something be missing.
