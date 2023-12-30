@@ -1,9 +1,9 @@
-# youwhisper
-`youwhisper` is a versatile, Python-based video/audio transcription mini-tool that uses `yt-dlp` and `whisperx` (or `openai-whisper`, depending on the configuration) to create a single-command transcription pipeline to transcribe audio from online video sources using `yt-dlp` and then passing the downloaded audio on to either `whisper` or `whisperx` for audio transcribing. Transcribed text comes out the other end, by default to `.txt` and `.srt` files.
+# youwhisper-cli
+`youwhisper-cli` is a versatile, Python-based video/audio transcription mini-tool that uses `yt-dlp` and `whisperx` (or `openai-whisper`, depending on the configuration) to create a single-command transcription pipeline to transcribe audio from online video sources using `yt-dlp` and then passing the downloaded audio on to either `whisper` or `whisperx` for audio transcribing. Transcribed text comes out the other end, by default to `.txt` and `.srt` files.
 
 (Full list of `yt-dlp` supported online platforms [here](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md#:~:text=URL%3A%20https%3A%2F%2Fgithub.com%2Fyt))
 
-Simply put, `youwhisper` a handy all-in-one CLI tool for creating accurate subtitles and text transcripts from online video and audio sources with a single, simple command. I.e.:
+Simply put, `youwhisper-cli` a handy all-in-one command line tool for creating accurate subtitles and text transcripts from online video and audio sources with a single, simple terminal command. I.e.:
 
 ```bash
 youwhisper <Video-URL>
@@ -17,7 +17,7 @@ youwhisper -l fi <Video-URL>
 
 For transcriptions where the spoken language is Finnish (`fi`). Program defaults to English (`en`). You can use the `-l` or `--lang` switch for all the available languages that `openai-whisper` or `whisperx` supports and/or modify the `youwhisper.ini` to suit your needs for the program's default transcription language.
 
-`youwhisper` runs in both Linux environments as well as in Windows using Git Bash.
+`youwhisper-cli` runs in both Linux environments as well as in Windows using Git Bash.
 
 ## Features
 
@@ -28,13 +28,13 @@ For transcriptions where the spoken language is Finnish (`fi`). Program defaults
 
 ## Installation
 
-1. To get started with `youwhisper`, clone the repository and set up the environment.
+1. To get started with `youwhisper-cli`, clone the repository and set up the environment.
 ```bash
-git clone https://github.com/FlyingFathead/youwhisper.git
-cd youwhisper
+git clone https://github.com/FlyingFathead/youwhisperc-li.git
+cd youwhisper-cli
 ```
 
-To run `youwhisper`, you need `yt-dlp` and either Whisper or WhisperX installed.
+To run `youwhisper-cli`, you need `yt-dlp` and either Whisper or WhisperX installed.
 
 2. Install `yt-dlp` (via `pip`)
 ```bash
@@ -65,7 +65,7 @@ pip install -U openai-whisper
 pip install git+https://github.com/openai/whisper.git 
 ```
 
-### **(Optional) Adding `youwhisper` to your `~/.bash_aliases`**
+### **(Optional) Adding `youwhisper-cli` to your `~/.bash_aliases`**
 
 If you have installed WhisperX (or Whisper) into a `conda` environment following the [instructions on WhisperX's project page](https://github.com/m-bain/whisperX) (which is usually the recommended method in many use scenarios, so that you don't collide with dependencies and end up with a broken Python environment), you might need to add a function to your `~/.bash_aliases` file that activates the `whisperx` environment before the script is run, here's an example on how to do it:
 
@@ -77,11 +77,11 @@ function youwhisper() {
     conda deactivate
 }
 ```
-(Note that in the function above, it's assumed that your `youwhisper` is located at `$HOME/youwhisper/` (a.k.a. underneath the user's home directory, in a sub-directory named `youwhisper`.)
+(Note that in the function above, it's assumed that your `youwhisper-cli` is located at `$HOME/youwhisper-cli/` (a.k.a. underneath the user's home directory, in a sub-directory named `youwhisper-cli`.)
 
 ## Usage
 
-Run `youwhisper` with the URL of the video from the supported streaming platform:
+Run `youwhisper-cli` with the URL of the video from the supported streaming platform:
 ```bash
 ./youwhisper.py <Video-URL>
 ```
@@ -115,7 +115,7 @@ Configuring youwhisper.ini: A Step-by-Step Guide
 1. `executable`:
 
     - This specifies the transcription tool to be used.
-    - In this example, `whisperx` is set as the executable, meaning `youwhisper` will use WhisperX for transcription.
+    - In this example, `whisperx` is set as the executable, meaning `youwhisper-cli` will use WhisperX for transcription.
     - If you have `openai-whisper` installed instead you can replace `whisperx` with `whisper` or the path to the `openai-whisper` executable.
 
 2. `model`:
@@ -161,14 +161,14 @@ By customizing these settings, you can make youwhisper fit perfectly into your w
 
 ## License
 
-`youwhisper` is made available under the MIT License. See the [LICENSE](LICENSE) file for more details.
+`youwhisper-cli` is made available under the MIT License. See the [LICENSE](LICENSE) file for more details.
 All the other required dependencies have their own corresponding licenses. See their licenses from their corresponding repositories.
 
 ## About
 
 Written by FlyingFathead, alongside my co-pilot, ChaosWhisperer.
 - GitHub: https://github.com/FlyingFathead/
-- `youwhisper` repo @ https://github.com/FlyingFathead/youwhisper/
+- `youwhisper-cli` repo @ https://github.com/FlyingFathead/youwhisper-cli/
 
 ## External links
 
